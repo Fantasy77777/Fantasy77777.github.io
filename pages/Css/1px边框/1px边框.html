@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>移动端1px边框线的问题 | 大薪薪的博客</title>
+    <meta name="description" content="大薪薪前端知识博客">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/avatar.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.d3c76227.css" as="style"><link rel="preload" href="/assets/js/app.d6ff6f18.js" as="script"><link rel="preload" href="/assets/js/2.c65f9fcf.js" as="script"><link rel="preload" href="/assets/js/8.dd497765.js" as="script"><link rel="prefetch" href="/assets/js/10.0f48532d.js"><link rel="prefetch" href="/assets/js/11.fb34c8f0.js"><link rel="prefetch" href="/assets/js/12.dbacfec3.js"><link rel="prefetch" href="/assets/js/13.9763f195.js"><link rel="prefetch" href="/assets/js/14.3aac5d30.js"><link rel="prefetch" href="/assets/js/15.419ff2d6.js"><link rel="prefetch" href="/assets/js/16.2116530b.js"><link rel="prefetch" href="/assets/js/17.229edf1b.js"><link rel="prefetch" href="/assets/js/18.31a286f5.js"><link rel="prefetch" href="/assets/js/19.70261e8b.js"><link rel="prefetch" href="/assets/js/20.9ce24305.js"><link rel="prefetch" href="/assets/js/21.4f72089e.js"><link rel="prefetch" href="/assets/js/22.1e247d59.js"><link rel="prefetch" href="/assets/js/23.f299e76e.js"><link rel="prefetch" href="/assets/js/24.919a8a60.js"><link rel="prefetch" href="/assets/js/25.2aa8f96f.js"><link rel="prefetch" href="/assets/js/26.f3eb37a0.js"><link rel="prefetch" href="/assets/js/27.b797e6dd.js"><link rel="prefetch" href="/assets/js/28.282ce7a2.js"><link rel="prefetch" href="/assets/js/29.f8180e21.js"><link rel="prefetch" href="/assets/js/3.6356e5d0.js"><link rel="prefetch" href="/assets/js/30.fa3ca274.js"><link rel="prefetch" href="/assets/js/31.58148f47.js"><link rel="prefetch" href="/assets/js/32.66ee2ba9.js"><link rel="prefetch" href="/assets/js/33.9e2a2cc0.js"><link rel="prefetch" href="/assets/js/34.d3e8f36a.js"><link rel="prefetch" href="/assets/js/35.a9f687fe.js"><link rel="prefetch" href="/assets/js/36.54c3dc70.js"><link rel="prefetch" href="/assets/js/37.f603cb91.js"><link rel="prefetch" href="/assets/js/38.705eafe1.js"><link rel="prefetch" href="/assets/js/39.165a7625.js"><link rel="prefetch" href="/assets/js/4.8e77e738.js"><link rel="prefetch" href="/assets/js/40.d4688111.js"><link rel="prefetch" href="/assets/js/41.0a53c1a7.js"><link rel="prefetch" href="/assets/js/42.053979db.js"><link rel="prefetch" href="/assets/js/43.af34fff5.js"><link rel="prefetch" href="/assets/js/44.e55e7cab.js"><link rel="prefetch" href="/assets/js/5.d84766bd.js"><link rel="prefetch" href="/assets/js/6.5ff95142.js"><link rel="prefetch" href="/assets/js/7.7c17ac53.js"><link rel="prefetch" href="/assets/js/9.96817770.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d3c76227.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.png" alt="大薪薪的博客" class="logo"> <span class="site-name can-hide">大薪薪的博客</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首 页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue3.0" class="dropdown-title"><span class="title">vue3.0</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue3.0/learn/learn.html" class="nav-link">
+  尝鲜
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue3.0/Proxy.html" class="nav-link">
+  Proxy
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/component/prop.html" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/router/router.html" class="nav-link">
+  vue路由
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/axios/axios.html" class="nav-link">
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/mock/mock.html" class="nav-link">
+  使用mock
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/组件按需引入/组件按需引入.html" class="nav-link">
+  组件按需引入
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/修饰符/修饰符.html" class="nav-link">
+  常用修饰符
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/自定义指令/自定义指令.html" class="nav-link">
+  自定义指令
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="css" class="dropdown-title"><span class="title">css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Css/三栏布局.html" class="nav-link">
+  三栏布局
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Css/垂直水平居中.html" class="nav-link">
+  垂直水平居中
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Css/移动端rem适配/移动端rem适配.html" class="nav-link">
+  移动端rem适配
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Css/1px边框/1px边框.html" class="nav-link">
+  1px边框
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Css/css清除浮动/css清除浮动.html" class="nav-link">
+  css清除浮动
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="ES6" class="dropdown-title"><span class="title">ES6</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/ES6/有趣的map、filter、reduce.html" class="nav-link">
+  有趣的map、filter、reduce
+</a></li><li class="dropdown-item"><!----> <a href="/pages/ES6/Map.html" class="nav-link">
+  Map
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Webpack/index.html" class="nav-link">
+  简单配置
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Webpack/analyzer.html" class="nav-link">
+  analyzer插件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="node" class="dropdown-title"><span class="title">node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Nodejs/index.html" class="nav-link">
+  简单启动服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js" class="dropdown-title"><span class="title">js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Js/事件冒泡相关.html" class="nav-link">
+  事件冒泡
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="兼容" class="dropdown-title"><span class="title">兼容</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/兼容/兼容.html" class="nav-link">
+  常见的兼容
+</a></li><li class="dropdown-item"><!----> <a href="/pages/兼容/css-hack.html" class="nav-link">
+  css hack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HTTP" class="dropdown-title"><span class="title">HTTP</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/跨域/同源策略.html" class="nav-link">
+  同源策略
+</a></li><li class="dropdown-item"><!----> <a href="/pages/跨域/解决跨域.html" class="nav-link">
+  跨域解决方法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="性能优化" class="dropdown-title"><span class="title">性能优化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/性能优化/Vue的性能优化.html" class="nav-link">
+  Vue的性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/pages/性能优化/Vue图片懒加载.html" class="nav-link">
+  Vue图片懒加载
+</a></li><li class="dropdown-item"><!----> <a href="/pages/性能优化/v-for事件委托.html" class="nav-link">
+  v-for事件委托
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首 页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue3.0" class="dropdown-title"><span class="title">vue3.0</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue3.0/learn/learn.html" class="nav-link">
+  尝鲜
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue3.0/Proxy.html" class="nav-link">
+  Proxy
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/component/prop.html" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/router/router.html" class="nav-link">
+  vue路由
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/axios/axios.html" class="nav-link">
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/mock/mock.html" class="nav-link">
+  使用mock
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/组件按需引入/组件按需引入.html" class="nav-link">
+  组件按需引入
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/修饰符/修饰符.html" class="nav-link">
+  常用修饰符
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/自定义指令/自定义指令.html" class="nav-link">
+  自定义指令
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="css" class="dropdown-title"><span class="title">css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Css/三栏布局.html" class="nav-link">
+  三栏布局
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Css/垂直水平居中.html" class="nav-link">
+  垂直水平居中
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Css/移动端rem适配/移动端rem适配.html" class="nav-link">
+  移动端rem适配
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Css/1px边框/1px边框.html" class="nav-link">
+  1px边框
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Css/css清除浮动/css清除浮动.html" class="nav-link">
+  css清除浮动
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="ES6" class="dropdown-title"><span class="title">ES6</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/ES6/有趣的map、filter、reduce.html" class="nav-link">
+  有趣的map、filter、reduce
+</a></li><li class="dropdown-item"><!----> <a href="/pages/ES6/Map.html" class="nav-link">
+  Map
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Webpack/index.html" class="nav-link">
+  简单配置
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Webpack/analyzer.html" class="nav-link">
+  analyzer插件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="node" class="dropdown-title"><span class="title">node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Nodejs/index.html" class="nav-link">
+  简单启动服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js" class="dropdown-title"><span class="title">js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Js/事件冒泡相关.html" class="nav-link">
+  事件冒泡
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="兼容" class="dropdown-title"><span class="title">兼容</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/兼容/兼容.html" class="nav-link">
+  常见的兼容
+</a></li><li class="dropdown-item"><!----> <a href="/pages/兼容/css-hack.html" class="nav-link">
+  css hack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HTTP" class="dropdown-title"><span class="title">HTTP</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/跨域/同源策略.html" class="nav-link">
+  同源策略
+</a></li><li class="dropdown-item"><!----> <a href="/pages/跨域/解决跨域.html" class="nav-link">
+  跨域解决方法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="性能优化" class="dropdown-title"><span class="title">性能优化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/性能优化/Vue的性能优化.html" class="nav-link">
+  Vue的性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/pages/性能优化/Vue图片懒加载.html" class="nav-link">
+  Vue图片懒加载
+</a></li><li class="dropdown-item"><!----> <a href="/pages/性能优化/v-for事件委托.html" class="nav-link">
+  v-for事件委托
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>三栏布局和垂直水平居中</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/Css/三栏布局.html" class="sidebar-link">三栏布局</a></li><li><a href="/pages/Css/垂直水平居中.html" class="sidebar-link">垂直水平居中</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="移动端1px边框线的问题"><a href="#移动端1px边框线的问题" class="header-anchor">#</a> 移动端1px边框线的问题</h1> <div class="custom-block tip"><p class="custom-block-title">少数页面直接简单处理</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">&lt;!--全部边框--&gt;
+.border-1px:after</span> <span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 200%<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #000<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+    <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> top left<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">&lt;!--单边框，以上边框为例--&gt;
+.border-1px-top:before</span> <span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">border-top</span><span class="token punctuation">:</span> 1px solid red<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transform-origin</span><span class="token punctuation">:</span> left top<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div></div> <div class="custom-block tip"><p class="custom-block-title">比较全面的做法</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@charset</span> <span class="token string">&quot;utf-8&quot;</span><span class="token punctuation">;</span></span>
+<span class="token selector">// 处理1pxborder线，在安卓和苹果手机的差异
+.border,
+.border-top,
+.border-right,
+.border-bottom,
+.border-left,
+.border-topbottom,
+.border-rightleft,
+.border-topleft,
+.border-rightbottom,
+.border-topright,
+.border-bottomleft</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border::before,
+.border-top::before,
+.border-right::before,
+.border-bottom::before,
+.border-left::before,
+.border-topbottom::before,
+.border-topbottom::after,
+.border-rightleft::before,
+.border-rightleft::after,
+.border-topleft::before,
+.border-topleft::after,
+.border-rightbottom::before,
+.border-rightbottom::after,
+.border-topright::before,
+.border-topright::after,
+.border-bottomleft::before,
+.border-bottomleft::after</span> <span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">'\0020'</span><span class="token punctuation">;</span> // 空格
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* border
+ * 因，边框是由伪元素区域遮盖在父级
+ * 故，子级若有交互，需要对子级设置
+ * 定位 及 z轴
+ */</span>
+<span class="token selector">.border::before</span> <span class="token punctuation">{</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #bbbec4<span class="token punctuation">;</span>
+  <span class="token property">transform-origin</span><span class="token punctuation">:</span> 0 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border-top::before,
+.border-bottom::before,
+.border-topbottom::before,
+.border-topbottom::after,
+.border-topleft::before,
+.border-rightbottom::after,
+.border-topright::before,
+.border-bottomleft::before</span> <span class="token punctuation">{</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border-right::before,
+.border-left::before,
+.border-rightleft::before,
+.border-rightleft::after,
+.border-topleft::after,
+.border-rightbottom::before,
+.border-topright::after,
+.border-bottomleft::after</span> <span class="token punctuation">{</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border-top::before,
+.border-topbottom::before,
+.border-topleft::before,
+.border-topright::before</span> <span class="token punctuation">{</span>
+  <span class="token property">border-top</span><span class="token punctuation">:</span> 1px solid #bbbec4<span class="token punctuation">;</span>
+  <span class="token property">transform-origin</span><span class="token punctuation">:</span> 0 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border-right::before,
+.border-rightbottom::before,
+.border-rightleft::before,
+.border-topright::after</span> <span class="token punctuation">{</span>
+  <span class="token property">border-right</span><span class="token punctuation">:</span> 1px solid #bbbec4<span class="token punctuation">;</span>
+  <span class="token property">transform-origin</span><span class="token punctuation">:</span> 100% 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border-bottom::before,
+.border-topbottom::after,
+.border-rightbottom::after,
+.border-bottomleft::before</span> <span class="token punctuation">{</span>
+  <span class="token property">border-bottom</span><span class="token punctuation">:</span> 1px solid #bbbec4<span class="token punctuation">;</span>
+  <span class="token property">transform-origin</span><span class="token punctuation">:</span> 0 100%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border-left::before,
+.border-topleft::after,
+.border-rightleft::after,
+.border-bottomleft::after</span> <span class="token punctuation">{</span>
+  <span class="token property">border-left</span><span class="token punctuation">:</span> 1px solid #bbbec4<span class="token punctuation">;</span>
+  <span class="token property">transform-origin</span><span class="token punctuation">:</span> 0 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border-top::before,
+.border-topbottom::before,
+.border-topleft::before,
+.border-topright::before</span> <span class="token punctuation">{</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border-right::before,
+.border-rightleft::after,
+.border-rightbottom::before,
+.border-topright::after</span> <span class="token punctuation">{</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border-bottom::before,
+.border-topbottom::after,
+.border-rightbottom::after,
+.border-bottomleft::after</span> <span class="token punctuation">{</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.border-left::before,
+.border-rightleft::before,
+.border-topleft::after,
+.border-bottomleft::before</span> <span class="token punctuation">{</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">max--moz-device-pixel-ratio</span><span class="token punctuation">:</span> 1.49<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">-webkit-max-device-pixel-ratio</span><span class="token punctuation">:</span> 1.49<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">max-device-pixel-ratio</span><span class="token punctuation">:</span> 1.49<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">max-resolution</span><span class="token punctuation">:</span> 143dpi<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">max-resolution</span><span class="token punctuation">:</span> 1.49dppx<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">// 默认值，无需重置
+    .border::before</span> <span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+      <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  
+    <span class="token selector">.border-top::before,
+    .border-bottom::before,
+    .border-topbottom::before,
+    .border-topbottom::after,
+    .border-topleft::before,
+    .border-rightbottom::after,
+    .border-topright::before,
+    .border-bottomleft::before</span> <span class="token punctuation">{</span>
+      <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  
+    <span class="token selector">.border-right::before,
+    .border-left::before,
+    .border-rightleft::before,
+    .border-rightleft::after,
+    .border-topleft::after,
+    .border-rightbottom::before,
+    .border-topright::after,
+    .border-bottomleft::after</span> <span class="token punctuation">{</span>
+      <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">min--moz-device-pixel-ratio</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">)</span> and <span class="token punctuation">(</span><span class="token property">max--moz-device-pixel-ratio</span><span class="token punctuation">:</span> 2.49<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">-webkit-min-device-pixel-ratio</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">)</span> and <span class="token punctuation">(</span><span class="token property">-webkit-max-device-pixel-ratio</span><span class="token punctuation">:</span> 2.49<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">min-device-pixel-ratio</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">)</span> and <span class="token punctuation">(</span><span class="token property">max-device-pixel-ratio</span><span class="token punctuation">:</span> 2.49<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">min-resolution</span><span class="token punctuation">:</span> 144dpi<span class="token punctuation">)</span> and <span class="token punctuation">(</span><span class="token property">max-resolution</span><span class="token punctuation">:</span> 239dpi<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">min-resolution</span><span class="token punctuation">:</span> 1.5dppx<span class="token punctuation">)</span> and <span class="token punctuation">(</span><span class="token property">max-resolution</span><span class="token punctuation">:</span> 2.49dppx<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token selector">.border::before</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 200%<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.border-top::before,
+  .border-bottom::before,
+  .border-topbottom::before,
+  .border-topbottom::after,
+  .border-topleft::before,
+  .border-rightbottom::after,
+  .border-topright::before,
+  .border-bottomleft::before</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.border-right::before,
+  .border-left::before,
+  .border-rightleft::before,
+  .border-rightleft::after,
+  .border-topleft::after,
+  .border-rightbottom::before,
+  .border-topright::after,
+  .border-bottomleft::after</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">min--moz-device-pixel-ratio</span><span class="token punctuation">:</span> 2.5<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">-webkit-min-device-pixel-ratio</span><span class="token punctuation">:</span> 2.5<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">min-device-pixel-ratio</span><span class="token punctuation">:</span> 2.5<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">min-resolution</span><span class="token punctuation">:</span> 240dpi<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token property">min-resolution</span><span class="token punctuation">:</span> 2.5dppx<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token selector">.border::before</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 300%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 300%<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.33333<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.border-top::before,
+  .border-bottom::before,
+  .border-topbottom::before,
+  .border-topbottom::after,
+  .border-topleft::before,
+  .border-rightbottom::after,
+  .border-topright::before,
+  .border-bottomleft::before</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0.33333<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.border-right::before,
+  .border-left::before,
+  .border-rightleft::before,
+  .border-rightleft::after,
+  .border-topleft::after,
+  .border-rightbottom::before,
+  .border-topright::after,
+  .border-bottomleft::after</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0.33333<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br></div></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d6ff6f18.js" defer></script><script src="/assets/js/2.c65f9fcf.js" defer></script><script src="/assets/js/8.dd497765.js" defer></script>
+  </body>
+</html>
